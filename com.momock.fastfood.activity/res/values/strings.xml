@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Activity Demo</string>
+    <string name="back">Back</string>
+    <string name="count">Count</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="welcome">Welcome ...</string>
+    <string name="go_to_second_activity">Go To Second Activity</string>
+
+</resources>

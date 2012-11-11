@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Say Hello</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Say Hello</string>
+    
+    <string name="say">Say</string>
+    <string name="what_name">Please enter your name :</string>
+    <string name="name">your name</string>
+
+</resources>

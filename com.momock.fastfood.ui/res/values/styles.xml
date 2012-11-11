@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ButtonText">        
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#808000</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:background">@android:drawable/btn_default</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="ColorButton" parent="android:Widget.Button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/button_black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:buttonStyle">@style/ColorButton</item>
+    </style>
+
+</resources>

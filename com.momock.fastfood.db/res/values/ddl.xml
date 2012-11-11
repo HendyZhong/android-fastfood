@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="database_init">
+        create table person(
+        	id integer primary key autoincrement not null,
+        	name text,
+        	title text
+        );
+        insert into person(name, title) values (\'momo\',\'CEO\');
+        insert into person(name, title) values (\'jojo\',\'CTO\');
+        insert into person(name, title) values (\'kaka\',\'CXO\');
+    </string>
+
+</resources>

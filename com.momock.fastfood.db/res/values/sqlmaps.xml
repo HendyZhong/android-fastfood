@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sql.person.create">
+        insert into person(name, title) values
+        (
+        #name#,
+        #title#
+        )        
+    </string>    
+    <string name="sql.person.get.all"> 
+        select * from person
+    </string>
+    <string name="sql.person.get.by.id"> 
+        select * from person
+        where id=#id#
+    </string>
+    <string name="sql.person.change.name"> 
+        update person
+        set name = #name#
+        where id=#id#
+    </string>
+</resources>

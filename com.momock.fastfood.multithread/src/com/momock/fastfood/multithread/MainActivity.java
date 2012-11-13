@@ -58,7 +58,8 @@ public class MainActivity extends Activity implements
 			@Override
 			public void onClick(View v) {
 				//String url = "http://www.weather.com.cn/data/sk/101020100.html";
-				String url = "http://10.0.2.2/momock/test/getdata";
+				//String url = "http://10.0.2.2/momock/test/getdata";
+				String url = "http://momock.com/test/getdata";
 				weatherRemoteService.doGet(url, MainActivity.this);
 			}
 		});
@@ -100,12 +101,10 @@ public class MainActivity extends Activity implements
 								try {
 									fis = new FileInputStream(
 											imageFile);
-									BitmapFactory.Options options = new BitmapFactory.Options();
-									options.inSampleSize = 8;
 									Bitmap bmp = null;
 									try {
 										bmp = BitmapFactory.decodeStream(fis, null,
-												options);
+												null);
 										ivImage.setImageBitmap(bmp);
 									} catch (OutOfMemoryError ome) {
 										Logger.error(ome.getMessage());
@@ -115,8 +114,8 @@ public class MainActivity extends Activity implements
 								}
 							}
 						});
-				//downloader.execute("http://img14.meitudata.com/201211/5/mw0zyhu1z626ludn4n.jpg!thumb1000");
-				downloader.execute("http://10.0.2.2/momock/data/test.jpg");
+				//downloader.execute("http://10.0.2.2/momock/data/test.jpg");
+				downloader.execute("http://momock.com/data/test.jpg");
 			}
 
 		});

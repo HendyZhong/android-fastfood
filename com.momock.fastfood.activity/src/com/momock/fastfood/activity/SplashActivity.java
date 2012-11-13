@@ -23,8 +23,8 @@ public class SplashActivity extends Activity {
                 Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
                 SplashActivity.this.startActivity(mainIntent);
                 SplashActivity.this.finish();
-                //SplashActivity.this.overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
-                SplashActivity.this.overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                SplashActivity.this.overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+                //SplashActivity.this.overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             }
         }, SPLASH_DISPLAY_LENGHT);
     }
